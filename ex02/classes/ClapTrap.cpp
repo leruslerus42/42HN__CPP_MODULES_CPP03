@@ -5,21 +5,22 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 08:57:52 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/17 10:52:24 by rrajaobe         ###   ########.fr       */
+/*   Created: 2022/07/17 11:23:30 by rrajaobe          #+#    #+#             */
+/*   Updated: 2022/07/17 11:23:30 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "../includes/ClapTrap.hpp"
 
 ClapTrap::ClapTrap(){
-	std::cout << "Default constructor called"<< std::endl;
+	std::cout << "Default constructor ClapTrap called"<< std::endl;
 
 }
 
 ClapTrap::ClapTrap(std::string	name)
 {
-	std::cout << "Overload constructor called"<< std::endl;
+	std::cout << "Overload constructor ClapTrap called"<< std::endl;
 	this->_name = name;
 	this->_health = 10;
 	this->_energy = 10;
@@ -28,19 +29,19 @@ ClapTrap::ClapTrap(std::string	name)
 
 ClapTrap::ClapTrap(const ClapTrap &copy)
 {
-	std::cout << "Copy constructor called" << std::endl;
+	std::cout << "Copy constructor ClapTrap called" << std::endl;
 	*this = copy;
 }
 
 ClapTrap	&ClapTrap::operator= (const ClapTrap & copy)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
+	std::cout << "Copy assignment ClaptTrap operator called" << std::endl;
 	return (*this);
 }
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Deconstructor called"<< std::endl;
+	std::cout << "Deconstructor ClapTrap called"<< std::endl;
 }
 
 
@@ -53,7 +54,6 @@ void	ClapTrap::attack(const std::string& target)
 	std::cout << "This action will cost 1 Energy Point." << std::endl;
 	stats();
 }
-
 
 void	ClapTrap::beRepaired(unsigned int amount)
 {
@@ -73,7 +73,6 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	stats();
 }
 
-
 void	ClapTrap::takeDamage(unsigned int amount)
 {
 	std::cout << "************************************************" << std::endl;
@@ -87,7 +86,6 @@ void	ClapTrap::takeDamage(unsigned int amount)
 	}
 	stats();
 }
-
 
 
 /*UTILS*/

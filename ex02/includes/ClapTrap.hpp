@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 08:59:17 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/17 11:23:10 by rrajaobe         ###   ########.fr       */
+/*   Created: 2022/07/17 11:23:39 by rrajaobe          #+#    #+#             */
+/*   Updated: 2022/07/17 11:31:27 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #define __CLAPTRAP__H__
 
 class ClapTrap {
-	private:
+	protected:
 		std::string	_name;
 		int 		_health;
 		int 		_energy;
